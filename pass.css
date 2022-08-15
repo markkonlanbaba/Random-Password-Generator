@@ -71,6 +71,9 @@ p {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
+    
+}
+button{
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
     -ms-transition: all 300ms;
@@ -78,7 +81,7 @@ p {
     transition: all 300ms;
 }
 
-#gen-btn:hover {
+button:hover {
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
@@ -114,4 +117,6 @@ p {
     justify-content: center;
     align-items: center;
 }
+
+
 

@@ -19,13 +19,17 @@ function getRandomPass1 () {
 
 
 
+
 function getRandomPass2 () {
     for (let i = 0; i < 16; i++) {
         secondPass.textContent += `${getRandomChar()}`
     }
 }
 
-function delPasswords() {
+function newPasswords() {
     firstPass.textContent = ``;
     secondPass.textContent = ``;
+    getRandomPass1()
+    getRandomPass2()
 }
+
