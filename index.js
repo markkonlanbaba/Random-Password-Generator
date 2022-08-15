@@ -6,6 +6,9 @@ let firstPass = document.getElementById("pass1");
 let secondPass = document.getElementById("pass2");
 let delPass = document.getElementById("del-btn")
 
+
+newPasswords();
+
 function getRandomChar() {
     let randomIndex = Math.floor(Math.random() * characters.length);
     return characters[randomIndex];
