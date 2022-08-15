@@ -4,5 +4,28 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let firstPass = document.getElementById("pass1");
 let secondPass = document.getElementById("pass2");
+let delPass = document.getElementById("del-btn")
 
-firstPass.textContent = "hellor my people"
+function getRandomChar() {
+    let randomIndex = Math.floor(Math.random() * characters.length);
+    return characters[randomIndex];
+};
+
+function getRandomPass1 () {
+    for (let i =0; i <16; i++ ) {
+        firstPass.textContent += `${getRandomChar()}`
+    }
+}
+
+
+
+function getRandomPass2 () {
+    for (let i = 0; i < 16; i++) {
+        secondPass.textContent += `${getRandomChar()}`
+    }
+}
+
+function delPasswords() {
+    firstPass.textContent = ``;
+    secondPass.textContent = ``;
+}
